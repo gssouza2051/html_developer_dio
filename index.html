@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <header>
+                <h1>Clínica Médica</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#pagina-principal">Página Principal</a></li>
+                        <li><a href="#sobre">Sobre a Clínica</a></li>
+                        <li><a href="#horario">Horário de Atendimento</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="clinica_medica.jpg" width="750" 
+            </div>
+    
+            <div class="content">
+                <section id="sobre">
+                    <h2>Sobre a Clínica</h2>
+                    <p>A Clínica Médica Cardiológica é uma clínica especializada em cardiologia, oferecendo atendimento de alta qualidade para pacientes de todas as idades.</p>
+                    <p>Nossos médicos são especialistas em cardiologia e possuem ampla experiência na área. Eles estão sempre atualizados com as últimas técnicas e tecnologias, garantindo o melhor tratamento para nossos pacientes.</p>
+                    <p>Oferecemos uma ampla gama de serviços de cardiologia, incluindo:</p>
+                    <ul>
+                    <li>Consultas médicas</li>
+                    <li>Electrocardiograma (ECG)</li>
+                    <li>Ecocardiograma</li>
+                    <li>Holter</li>
+                    <li>Teste ergométrico</li>
+                    </ul>
+                </section>
+                <!-- Adicione uma nova seção ao corpo do HTML -->
+                <section id="horario" class="horario">
+                    <h2>Horário de Atendimento</h2>
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th>Serviços</th>
+                                <th>Segunda a sexta</th>
+                                <th>Sábados</th>
+                                <th>Feriados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Clínica geral</td>
+                                <td>8:00 - 19:00</td>
+                                <td>8:00 - 14:00</td>
+                                <td>8:00 - 14:00</td>
+                            </tr>
+                            <tr>
+                                <td>Psicologia</td>
+                                <td>8:00 - 18:00</td>
+                                <td>8:00 - 14:00</td>
+                                <td>8:00 - 14:00</td>
+                            </tr>
+                            <tr>
+                                <td>Pediatria</td>
+                                <td>8:00 - 19:00</td>
+                                <td>8:00 - 18:00</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Oftalmologia</td>
+                                <td>8:00 - 19:00</td>
+                                <td>8:00 - 18:00</td>
+                                <td>-</td>
+                            </tr>
+                        <tbody>
+
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </table>
+                </section>
+
+            </div>
+    
+            <div class="footer">
+                <!-- Adicione uma nova seção ao corpo do HTML -->
+                <section id="contato">
+                    <h2>Contato</h2>
+                    <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
+                    <form action="processar_formulario.php" method="post">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                </section>
+
+                <footer>
+                    <p>&copy; 2023 Clínica Médica. Todos os direitos reservados.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
